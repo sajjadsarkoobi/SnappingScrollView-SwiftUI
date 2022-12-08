@@ -8,14 +8,38 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView {
+            ZStack {
+                
+                PostStreamView()
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("Snapping Scroll")
         }
-        .padding()
+        .navigationViewStyle(.stack)
+        .onAppear {
+            setupNavigationBar()
+        }
+        
+    }
+    
+    func setupNavigationBar() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .systemBackground
+        appearance.shadowColor = .clear
+        appearance.shadowImage = UIImage()
+        UINavigationBar.appearance().prefersLargeTitles = false
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        
+        
+        UITabBar.appearance().shadowImage = UIImage()
+        UITabBar.appearance().backgroundImage = UIImage()
+        UITabBar.appearance().isTranslucent = true
+        UITabBar.appearance().backgroundColor = .systemBackground
     }
 }
 
