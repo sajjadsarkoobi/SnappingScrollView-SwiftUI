@@ -12,3 +12,10 @@ Based on native scroll view of SwiftUI
 #
 
 ![](https://github.com/sajjadsarkoobi/SnappingScrollView-SwiftUI/blob/main/SnappingScrollView/Assets.xcassets/snappingScrollview.dataset/snappingScrollview.gif)
+
+
+## Author:
+
+- [@Sajjad Sarkoobi](https://www.github.com/sajjadsarkoobi)
+- [LinkedIn](https://www.linkedin.com/in/sajjad-sarkoobi/)
+- sajjadsarkoobi@gmail.com
